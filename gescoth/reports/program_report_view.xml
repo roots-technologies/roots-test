@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<report 
+	    id = "report_program_examen_view_report" 
+	    model = "gescoth.examen.program" 
+	    string = "Programme d'examen" 
+	    report_type = "qweb-pdf" 
+	    name = "gescoth.report_program_examen_view" 
+	    file = "gescoth.report_program_examen_view"
+	/>  
+
+	<template id="report_program_examen_view">
+		<t t-call="web.html_container">
+			<t t-foreach="docs" t-as="o">
+				<t t-call="web.external_layout">
+	                <div class="page">
+	                    <h4 style="text-align: center;">Programme d'examen</h4>
+	                    
+	                </div>
+	            </t>
+			</t>
+		</t>
+	</template>
+</odoo>

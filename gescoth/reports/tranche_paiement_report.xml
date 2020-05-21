@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<report 
+		id = "fiche_tranches_report_view" 
+		model = "gescoth.tranche" 
+		string = "Fiche de paiement" 
+		report_type = "qweb-pdf" 
+		name = "gescoth.gescoth_tranche_paiement_report_view" 
+		file = "gescoth.gescoth_tranche_paiement_report_view"
+		/>
+		<template id="gescoth_tranche_paiement_report_view">
+			<t t-call="web.html_container">
+				<t t-call="web.external_layout">
+					<h3 class="text-center">Fiche d'engagement de paiement</h3>
+				</t>
+			</t>
+		</template>
+	</odoo>
